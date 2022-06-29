@@ -98,10 +98,15 @@ function buildCharts(sample) {
     var barData = [trace];
     // 9. Create the layout for the bar chart. 
     var barLayout = {
-      title: "Top 10 Bacteria Cultures Found",
+      title:{
+        text:"Top 10 Bacteria Cultures Found",
+        font: {
+          size: 14
+        },
+      },  
       xaxis: {title: "Sample Values" },
       yaxis: {title: " "},
-      width:300,
+    //  width:300,
       height: 350,
       plot_bgcolor:"#e0edee",
       paper_bgcolor:"#e0edee" 
@@ -121,7 +126,12 @@ function buildCharts(sample) {
     };
     var bubbleData = [trace1]
     var bubbleLayout = {
-      title: "Bacteria Cultures Per Sample",
+        title:{
+        text:"Bacteria Cultures Per Sample",
+        font: {
+          size: 14
+        },
+      },  
       xaxis: {title: "OTU_ID" },
       yaxis: {title: " "},
       plot_bgcolor:"#e0edee",
@@ -134,7 +144,12 @@ function buildCharts(sample) {
     var gaugeData = [
       {
         value:washingF,
-        title:{text:"Belly Button Washing Frequency"},
+        title:{
+          text:"Belly Button Washing Frequency",
+          font: {
+            size: 14
+          },
+        },
         type:"indicator",
         mode: "gauge+number",
         gauge: {
@@ -151,7 +166,7 @@ function buildCharts(sample) {
       }
     ];
     var gaugeLayout = { 
-      width:300,
+    //  width:300,
       height: 350,
       plot_bgcolor:"#e0edee",
       paper_bgcolor:"#e0edee" 
