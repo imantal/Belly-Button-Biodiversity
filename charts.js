@@ -102,7 +102,7 @@ function buildCharts(sample) {
       xaxis: {title: "Sample Values" },
       yaxis: {title: " "},
       width:300,
-      height: 370,
+      height: 350,
       plot_bgcolor:"#e0edee",
       paper_bgcolor:"#e0edee" 
     };
@@ -151,8 +151,8 @@ function buildCharts(sample) {
       }
     ];
     var gaugeLayout = { 
-      width:370,
-      height: 370,
+      width:300,
+      height: 350,
       plot_bgcolor:"#e0edee",
       paper_bgcolor:"#e0edee" 
     };
